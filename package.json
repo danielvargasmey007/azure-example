@@ -1,0 +1,21 @@
+{
+  "name": "cumbia-test",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "func start",
+    "test": "echo \"No tests yet...\""
+  },
+  "dependencies": {
+    "@azure/cosmos": "3.11.5",
+    "@microsoft/microsoft-graph-client": "^2.2.1",
+    "@sendgrid/mail": "^7.4.5",
+    "adal-node": "^0.2.2",
+    "axios": "^0.21.1",
+    "durable-functions": "^1.4.6",
+    "twilio": "^3.65.0"
+  },
+  "devDependencies": {
+    "@microsoft/microsoft-graph-types": "^1.41.0"
+  }
+}

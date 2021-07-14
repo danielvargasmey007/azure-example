@@ -1,0 +1,27 @@
+{
+  "bindings": [
+    {
+      "authLevel": "function",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": [
+        "get" 
+      ]
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    },
+    {
+      "type": "cosmosDB",
+      "direction": "in",
+      "name": "getUser",
+      "databaseName": "avargas-cumbia-test-db",
+      "collectionName": "users",
+      "connectionStringSetting": "CumbiaTestDB",
+      "sqlQuery": "SELECT u.id, u.name, u.lastName, u.address, u.tel, u.age FROM USERS u "
+    }
+  ]
+}
